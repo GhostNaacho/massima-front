@@ -131,3 +131,20 @@ a:hover{
     margin-right: 30px; /* Increase margin to the right of each navigation item */
   }
 }
+
+
+/* Define the keyframes animation */
+@keyframes slide-from-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the element */
+#animation {
+  animation: slide-from-left 1s ease-out forwards;
+}
