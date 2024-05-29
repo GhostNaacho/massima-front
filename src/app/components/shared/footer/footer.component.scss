@@ -1,0 +1,73 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s; /* Smooth transition for color change */
+  margin: 10px;
+}
+
+a:hover {
+  color: #A5794F; /* Change color on hover */
+}
+
+.footer-title:hover{
+  color:#A5794F
+}
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #231917; /* Set background color */
+  color: white; /* Set text color to white */
+  padding: 15px;
+  text-align: center;
+  animation: slide-up 0.9s ease-in-out;
+  border-top-left-radius: 10px; /* Add rounded border to top-left corner */
+  border-top-right-radius: 10px; /* Add rounded border to top-right corner */
+}
+
+.footer:hover {
+  opacity: 0.7; /* Adjust the opacity value as needed */
+}
+
+/* List styles */
+.footer ul {
+  margin: 10px 0; /* Add margin to the list */
+}
+
+/* Keyframes */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 576px) {
+  .footer .social-icons {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px; /* Increase padding for medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .social-icons {
+    margin-right: 20px; /* Increase margin for wider screens */
+  }
+}

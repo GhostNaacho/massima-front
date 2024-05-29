@@ -1,0 +1,133 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+a:hover{
+  color: #A5794F;
+}
+
+/* Styles for the logo */
+.logo {
+  max-height: 200px; /* Increased max height for the logo */
+  margin-top: 20px; /* Add top margin to the logo */
+  margin-bottom: 10px; /* Add bottom margin to the logo */
+}
+.logo:hover{
+  opacity: 0.7; /* Adjust the opacity value as needed */
+}
+
+.navbar:hover {
+  opacity: 0.7; /* Adjust the opacity value as needed */
+}
+
+/* Styles for the navigation bar */
+.navbar {
+  background: #A5794F; /* Set background color */
+  border-bottom-left-radius: 10px; /* Add rounded border to bottom-left corner */
+  border-bottom-right-radius: 10px; /* Add rounded border to bottom-right corner */
+}
+
+/* Styles for navigation items */
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s; /* Smooth transition for color change */
+  font-size: 18px; /* Increase font size for navigation items */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #A5794F; /* Change color on hover */
+}
+
+/* Responsive styling for small devices */
+@media (max-width: 991.98px) {
+
+  /* Styles for the logo */
+  .logo {
+    max-height: auto; /* Increased max height for the logo */
+    margin-top: 10px; /* Add top margin to the logo */
+    display: block;
+    margin-left: auto; /* Center the logo horizontally */
+    margin-right: auto; /* Center the logo horizontally */
+  }
+
+  .navbar {
+    color: #fff; /* Set font color to white for small screens */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+
+  .navbar-collapse {
+    background-color: #231917; /* Background color for the collapsed navbar */
+    padding-top: 10px; /* Add padding to the top of the collapsed navbar */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center align navigation links */
+    width: 100%; /* Ensure navigation links take full width */
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px; /* Add margin between each navigation item */
+  }
+
+  .navbar-toggler {
+    background-color: #A5794F; /* Background color for the toggler button */
+    border-color: #A5794F; /* Border color for the toggler button */
+    color: #fff; /* Text color for the toggler button */
+    width: 100%; /* Set width to 100% to occupy full width */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+}
+
+/* Responsive styling for medium screens */
+@media (min-width: 992px) {
+
+  .logo {
+    max-height: 200px; /* Increased max height for the logo */
+    margin-top: 20px; /* Add top margin to the logo */
+    display: block;
+    float: left;
+  }
+
+  .navbar {
+    color: #fff; /* Set font color to white for medium screens and wider ones */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+
+  .navbar-collapse {
+    background-color: transparent; /* Set background color for the collapsed navbar to transparent */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center align navigation links */
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0; /* Remove margin between each navigation item */
+    margin-right: 15px; /* Add margin to the right of each navigation item */
+  }
+
+  .navbar-toggler {
+    display: none; /* Hide the toggler button for medium screens and wider ones */
+  }
+}
+
+/* Responsive styling for wider screens */
+@media (min-width: 1200px) {
+  .navbar-nav {
+    text-align: left; /* Align navigation links to the left for wider screens */
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increase margin to the right of each navigation item */
+  }
+}

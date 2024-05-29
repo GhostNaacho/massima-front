@@ -1,0 +1,24 @@
+<nav id="animation" class="navbar navbar-expand-lg navbar-light" style="background: #231917;">
+    <div class="container-fluid">
+        <!-- Toggler Button Row -->
+        <div class="row w-100 justify-content-center align-items-center mb-2">
+            <div class="col-12 text-center">
+                <a href="#" class="navbar-brand rounded-image-container">
+                    <img src="./../../../../assets/images/massimaLogo.png" alt="Massima Delizia" class="logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" [class.show]="navbarOpen" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+                @for(row of navLinks; track row.id)
+                {   
+                    <a class="nav-item nav-link" href="{{row.href}}">{{ row.label }}</a>
+                }
+            </div>
+        </div>
+        <button type="button" class="navbar-toggler" (click)="toggleNavbar()" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
