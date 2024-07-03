@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { CarouselComponent } from '../shared/carousel/carousel.component';
-import {WorkerComponent} from '../worker/worker.component'
+import {WorkerComponent} from '../worker/worker.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselComponent, WorkerComponent],
+  imports: [WorkerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Worker } from '../../models/worker.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
