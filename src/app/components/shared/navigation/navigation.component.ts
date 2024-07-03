@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { nav } from '../../../data';
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss'
 })

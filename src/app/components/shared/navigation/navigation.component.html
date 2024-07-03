@@ -13,7 +13,7 @@
             <div class="navbar-nav mx-auto">
                 @for(row of navLinks; track row.id)
                 {   
-                    <a class="nav-item nav-link" href="{{row.href}}">{{ row.label }}</a>
+                    <a class="nav-item nav-link" routerLink="{{row.href}}">{{ row.label }}</a>
                 }
             </div>
         </div>

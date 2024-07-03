@@ -4,11 +4,6 @@ body {
   padding: 0;
 }
 
-/* Apply the animation to the element */
-#animation {
-  animation: slide-from-left 1s ease-out forwards;
-}
-
 a {
   color: white;
   transition: color 0.3s; /* Smooth transition for color change */
@@ -51,10 +46,7 @@ a:hover{
 
 /* Responsive styling for small devices */
 @media (max-width: 991.98px) {
-  /* Apply the animation to the element */
-  #animation {
-    animation: slide-from-left 2s ease-out forwards;
-  }
+
   /* Styles for the logo */
   .logo {
     max-height: auto; /* Increased max height for the logo */
@@ -96,10 +88,6 @@ a:hover{
 
 /* Responsive styling for medium screens */
 @media (min-width: 992px) {
-  /* Apply the animation to the element */
-  #animation {
-  animation: slide-from-left 2s ease-out forwards;
-  }
 
   .logo {
     max-height: 200px; /* Increased max height for the logo */
@@ -143,17 +131,3 @@ a:hover{
     margin-right: 30px; /* Increase margin to the right of each navigation item */
   }
 }
-
-
-/* Define the keyframes animation */
-@keyframes slide-from-left {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-
